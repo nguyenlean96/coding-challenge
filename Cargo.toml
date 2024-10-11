@@ -1,0 +1,11 @@
+[package]
+name = "solve-leetcode-problems-wt-rust"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "mycrate"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+rand = "0.8.5"
