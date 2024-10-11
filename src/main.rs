@@ -1,9 +1,10 @@
 // Use the problems from lib.rs
 use mycrate::problems::{
-    easy::{is_palindrome::IsPalindrome, two_sum::TwoSum},
-    hard::{
-        text_justification::*,
+    easy::{
+        is_palindrome::solution::IsPalindrome, 
+        two_sum::solution::TwoSum
     },
+    hard::text_justification::solution::*,
 };
 
 fn main() {
