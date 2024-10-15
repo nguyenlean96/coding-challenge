@@ -1,12 +1,15 @@
 // Use the problems from lib.rs
-use mycrate::problems::{
+use solve_leetcode_problems_wt_rust::problems::{
     easy::{
         is_palindrome::solution::IsPalindrome, 
         two_sum::solution::TwoSum
     },
     hard::text_justification::solution::*,
 };
-use mycrate::hackerrank_com::diagonal_difference::solution::*;
+use solve_leetcode_problems_wt_rust::hackerrank_com::{
+    diagonal_difference::solution::*,
+    plus_minus::solution::*,
+};
 
 fn main() {
     TwoSum::test().unwrap_or_else(|err| {
@@ -22,6 +25,10 @@ fn main() {
     });
 
     DiagonalDifference::test().unwrap_or_else(|err| {
+        eprintln!("{}", err);
+    });
+
+    PlusMinus::test().unwrap_or_else(|err| {
         eprintln!("{}", err);
     });
 }
