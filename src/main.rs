@@ -1,15 +1,16 @@
 // Use the problems from lib.rs
-use solve_leetcode_problems_wt_rust::problems::{
+use mycrate::problems::{
     easy::{
         is_palindrome::solution::IsPalindrome, 
         two_sum::solution::TwoSum
     },
     hard::text_justification::solution::*,
 };
-use solve_leetcode_problems_wt_rust::hackerrank_com::{
+use mycrate::hackerrank_com::{
     diagonal_difference::solution::*,
     plus_minus::solution::*,
     stair_case::solution::*,
+    mini_max_sum::solution::*,
 };
 
 fn main() {
@@ -34,4 +35,8 @@ fn main() {
     });
 
     StairCase::test();
+
+    MiniMaxSum::test().unwrap_or_else(|err| {
+        eprintln!("{}", err);
+    });
 }
