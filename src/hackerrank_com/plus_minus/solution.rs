@@ -1,4 +1,4 @@
-use crate::utils::my_collection::*;
+use crate::utils::collection::reduce_fn::*;
 
 pub struct PlusMinus {
     n: usize,
