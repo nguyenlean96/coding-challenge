@@ -6,6 +6,7 @@ use mycrate::problems::{
     },
     hard::text_justification::solution::*,
 };
+use mycrate::hackerrank_com::diagonal_difference::solution::*;
 
 fn main() {
     TwoSum::test().unwrap_or_else(|err| {
@@ -17,6 +18,10 @@ fn main() {
     });
 
     TextJustification::test().unwrap_or_else(|err| {
+        eprintln!("{}", err);
+    });
+
+    DiagonalDifference::test().unwrap_or_else(|err| {
         eprintln!("{}", err);
     });
 }
