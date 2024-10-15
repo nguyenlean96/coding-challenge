@@ -1,1 +1,1 @@
-pub mod my_collection;
+pub mod collection;
