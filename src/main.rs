@@ -9,6 +9,7 @@ use solve_leetcode_problems_wt_rust::problems::{
 use solve_leetcode_problems_wt_rust::hackerrank_com::{
     diagonal_difference::solution::*,
     plus_minus::solution::*,
+    stair_case::solution::*,
 };
 
 fn main() {
@@ -31,4 +32,6 @@ fn main() {
     PlusMinus::test().unwrap_or_else(|err| {
         eprintln!("{}", err);
     });
+
+    StairCase::test();
 }
