@@ -3,6 +3,10 @@
 version = 4
 
 [[package]]
+name = "add_two_numbers"
+version = "0.1.0"
+
+[[package]]
 name = "byteorder"
 version = "1.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -20,6 +24,10 @@ version = "0.1.0"
 dependencies = [
  "rand",
 ]
+
+[[package]]
+name = "find_players_with_zero_or_one_losses"
+version = "0.1.0"
 
 [[package]]
 name = "getrandom"

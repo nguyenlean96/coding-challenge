@@ -7,6 +7,9 @@ members = [
   "leetcode/easy/two_sum",
   "leetcode/easy/is_palindrome",
 
+  "leetcode/medium/add_two_numbers/using-rust",
+  "leetcode/medium/find_players_with_zero_or_one_losses/using-rust",
+
   "leetcode/hard/text_justification",
   
   "hackerrank_com/diagonal_difference",
