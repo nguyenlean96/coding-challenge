@@ -45,7 +45,7 @@ impl TextJustification {
         // Randomly return one of the examples
         let mut examples = vec![example_1, example_2, example_3];
         examples.shuffle(&mut rand::thread_rng());
-        
+
         examples
     }
 
@@ -77,4 +77,10 @@ impl TextJustification {
 
         result
     }
+}
+
+fn main() {
+    TextJustification::test().unwrap_or_else(|err| {
+        println!("Error: {:?}", err);
+    });
 }
