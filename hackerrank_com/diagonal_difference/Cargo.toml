@@ -1,0 +1,8 @@
+[package]
+name = "diagonal_difference"
+version = "0.1.0"
+publish.workspace = true
+edition.workspace = true
+
+[dependencies]
+rand.workspace = true

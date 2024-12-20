@@ -50,5 +50,8 @@ impl DiagonalDifference {
 
         (the_first_diagonal - the_second_diagonal).abs()
     }
-    
+}
+
+fn main() {
+    DiagonalDifference::test().unwrap_or_else(|err| println!("{}", err));
 }
