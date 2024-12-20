@@ -1,7 +1,19 @@
 [workspace]
 resolver = "2"
 
-members = []
+members = [
+  "utils",
+  
+  "leetcode/easy/two_sum",
+  "leetcode/easy/is_palindrome",
+
+  "leetcode/hard/text_justification",
+  
+  "hackerrank_com/diagonal_difference",
+  "hackerrank_com/mini_max_sum",
+  "hackerrank_com/plus_minus",
+  "hackerrank_com/stair_case",
+]
 
 [workspace.package]
 publish = false
