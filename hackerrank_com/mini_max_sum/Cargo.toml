@@ -1,0 +1,9 @@
+[package]
+name = "mini_max_sum"
+version = "0.1.0"
+publish.workspace = true
+edition.workspace = true
+
+[dependencies]
+rand.workspace = true
+utils = { path = "../../utils" }
