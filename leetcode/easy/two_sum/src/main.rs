@@ -10,7 +10,7 @@ impl TwoSum {
         // Randomly generate a vector of numbers and all numbers are unique
         let mut nums = (0..rand::thread_rng().gen_range(3..10)).collect::<Vec<i32>>();
         nums.shuffle(&mut rand::thread_rng());
-        
+
         // Randomly generate a target greater than 0
         let target = rand::thread_rng().gen_range(1..10);
 
@@ -44,7 +44,7 @@ impl TwoSum {
             if let Some(&index) = map.get(&complement) {
                 return vec![index, i as i32];
             }
-            
+
             map.insert(num, i as i32);
         }
         vec![]
