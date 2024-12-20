@@ -21,14 +21,20 @@ impl IsPalindrome {
         println!("x: {:?}", x);
         let mut x = x;
         let mut reversed = 0;
-        
+
         while x > 0 {
             reversed = reversed * 10 + x % 10;
             x /= 10;
 
             println!("reversed: {:?}, x: {:?}", reversed, x);
         }
-        
+
         reversed == x
     }
+}
+
+fn main() {
+    IsPalindrome::test().unwrap_or_else(|err| {
+        println!("{}", err);
+    });
 }
