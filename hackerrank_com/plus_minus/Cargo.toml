@@ -1,0 +1,8 @@
+[package]
+name = "plus_minus"
+version = "0.1.0"
+publish.workspace = true
+edition.workspace = true
+
+[dependencies]
+utils = { path = "../../utils" }
