@@ -1,0 +1,7 @@
+[package]
+name = "find_players_with_zero_or_one_losses"
+version = "0.1.0"
+publish.workspace = true
+edition.workspace = true
+
+[dependencies]
